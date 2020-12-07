@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-image: linear-gradient(#aaf5ff, #e0d2b7);height: 1000px;">
+        <br>
+        
+        <div>
+            <center><h1 style="font-size: xxx-large;text-decoration: underline;text-transform: capitalize;font-family: monospace;"><B>Generate a Character</B></h1></center> <br><br>
+
+            <br>
+            <center><p style="font-family: monospace;font-size: x-large;font-weight: bold;">This app generates a random character for you. This includes the stats, race and class. Press re-roll to see what kind of character you end up with!</p>
+            <br>
+            <div>
+                <h2 style="color: black;">Character Class: <h3 style="color: red;">{{ char_class }}</h2>
+                <h2 style="color: black;">Character Race: <h3 style="color: red;">{{ race }}</h2>
+                <h2 style="color: black;">Character Stats: <h3 style="color: red;">{{ stats }}</h3></h2>
+            </div>
+            <br><br>
+            <div><a href="{{ url_for('index')}}"><button style="font-size: xxx-large;padding: 14px 40px;background-color: initial;font-variant-caps: petite-caps;font-family: monospace;">
+                Re-Roll</button></div> </center></a>
+
+        </div>
+        
+    </body>
+</html>
